@@ -1,17 +1,18 @@
 {
-  "name": "reactjs",
+  "name": "Toko Waifu",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "author": "Ahmad Zaki",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "yarn": "^1.22.19"
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

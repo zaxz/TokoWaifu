@@ -1,10 +1,15 @@
 import React from 'react';
 import Card from "./Card";
+import { anime } from "../data";
 
 const AnimeList = () => {
+  const datas = anime
+  const shuffledData = datas.sort(() => Math.random() - 0.5);
+ 
+  
   return (
     <div className="mt-5 mx-auto gap-5 justify-center container flex flex-wrap">
-      <Card waifu={"Siesta"} charFrom={"Tante wa Mou, Shindeiru"} img={"/anime/siesta.jpeg"}/>
+      {/*<Card waifu={"Siesta"} charFrom={"Tante wa Mou, Shindeiru"} img={"/anime/siesta.jpeg"}/>
       <Card waifu={"Kaori Miyazono"} charFrom={"Shigatsu wa Kimi no Uso"} img={"/anime/kaori.jpeg"}/>
       <Card waifu={"Zero Two"} charFrom={"Darling in the Franxx"} img={"/anime/zerotwo.jpeg"}/>
       <Card waifu={"Mikasa Ackerman"} charFrom={"Shingeki no Kyojin"} img={"/anime/mikasa.jpeg"}/>
@@ -14,6 +19,10 @@ const AnimeList = () => {
       <Card waifu={"Aoi Moyamori"} charFrom={"Shirobako"} img={"/anime/aoi.jpeg"}/>
       <Card waifu={"Megumi Kato"} charFrom={"Saenai Heroine no Sodatekata"} img={"/anime/megumi.jpeg"}/>
       <Card waifu={"Yuuki Asuna"} charFrom={"Sword Art Online"} img={"/anime/asuna.jpeg"}/>
+    */}
+    {shuffledData.map((data, index) => (
+      <Card key={index} product={data} waifu={data.name} charFrom={data.from} img={data.img} />
+      ))}
     </div>
   )
 }

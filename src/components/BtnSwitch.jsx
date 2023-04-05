@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const BtnSwitch = (props) => {
   return (
@@ -9,12 +10,12 @@ const BtnSwitch = (props) => {
         </div>
       </button>
       <button onClick={props.toggleAnime}>
-        <div className="rounded-2xl py-2 px-4 text-white w-28 bg-[#f70066]">
+        <div className="rounded-2xl py-2 px-4 text-white w-28 bg-[#f70066] hover:scale-95 transition">
           Anime
         </div>
       </button>
       <button onClick={props.toggleVtuber}>
-        <div className="rounded-2xl py-2 px-4 text-white w-28 bg-[#f70066]">
+        <div className="rounded-2xl py-2 px-4 text-white w-28 bg-[#f70066] hover:scale-95 transition">
           VTuber
         </div>
       </button>
